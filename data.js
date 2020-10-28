@@ -93,7 +93,9 @@ const timelines = {
             subdivisions: [{
                     id: 'paleozoic',
                     name: 'Paleozoic',
-                    description: [],
+                    description: [
+                        '"Ancient Life"'
+                    ],
                     start: 541,
                     end: 252,
                     color: 'pink',
@@ -155,7 +157,10 @@ const timelines = {
                         {
                             id: 'permian',
                             name: 'Permian',
-                            description: [],
+                            description: [
+                                'Rule of the mammal-like reptiles such as the sailbacks e.g. Dimetrodon',
+                                'The Great Dying - the worst extinction event in the history of Earth'
+                            ],
                             start: 286,
                             end: 245,
                             color: 'pink',
@@ -168,14 +173,19 @@ const timelines = {
                 {
                     id: 'mesozoic',
                     name: 'Mesozoic',
-                    description: [],
+                    description: [
+                        '"Middle Life"',
+                        'Age of the dinosaurs'
+                    ],
                     start: 252,
                     end: 66,
                     color: 'purple',
                     subdivisions: [{
                             id: 'triassic',
                             name: 'Triassic',
-                            description: [],
+                            description: [
+                                'First dinosaurs, mammals, crocodiles and frogs evolve',
+                            ],
                             start: 252,
                             end: 201,
                             color: 'red',
@@ -184,7 +194,11 @@ const timelines = {
                         {
                             id: 'jurassic',
                             name: 'Jurassic',
-                            description: [],
+                            description: [
+                                'Rule of the Dinosaurs',
+                                'Age of the great Sauropods such as Diplodocus and Brachiosaurus',
+                                'A line of dinosaurs evolves into the first birds'
+                            ],
                             start: 201,
                             end: 145,
                             color: 'blue',
@@ -193,7 +207,13 @@ const timelines = {
                         {
                             id: 'cretaceous',
                             name: 'Cretaceous',
-                            description: [],
+                            description: [
+                                'Age of T-Rex, Triceratops and many other famous dinosaurs',
+                                '10-15km wide meteorite strikes the Yucatan Peninsula',
+                                'Extinction of the dinosaurs',
+                                'First snakes',
+                                'Many modern mammals evolve'
+                            ],
                             start: 145,
                             end: 66,
                             color: 'yellow',
@@ -204,7 +224,10 @@ const timelines = {
                 {
                     id: 'cenozoic',
                     name: 'Cenozoic',
-                    description: [],
+                    description: [
+                        '"Modern Life"',
+                        'Age of mammals'
+                    ],
                     start: 66,
                     end: 0,
                     color: 'green',
