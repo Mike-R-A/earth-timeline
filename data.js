@@ -102,7 +102,9 @@ const timelines = {
                     subdivisions: [{
                             id: 'cambrian',
                             name: 'Cambrian',
-                            description: [],
+                            description: [
+                            'First fishes, trilobites, corals and starfish'
+                            ],
                             start: 570,
                             end: 505,
                             color: 'pink',
