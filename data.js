@@ -142,7 +142,7 @@ const timelines = {
                         {
                             id: 'devonian',
                             name: 'Devonian',
-                            description: [],
+                            description: ['First amphibians, insects and spiders'],
                             start: 408,
                             end: 360,
                             color: 'pink',
@@ -153,7 +153,7 @@ const timelines = {
                         {
                             id: 'carboniferous',
                             name: 'Carboniferous',
-                            description: [],
+                            description: ['First reptiles','Great coal swamp forests'],
                             start: 360,
                             end: 286,
                             color: 'pink',
