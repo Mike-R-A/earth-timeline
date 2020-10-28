@@ -115,7 +115,9 @@ const timelines = {
                         {
                             id: 'ordovician',
                             name: 'Ordovician',
-                            description: [],
+                            description: [
+                             'First nautiloids. Corals and trilobites common.'
+                            ],
                             start: 505,
                             end: 438,
                             color: 'pink',
