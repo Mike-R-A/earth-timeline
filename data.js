@@ -128,7 +128,10 @@ const timelines = {
                         {
                             id: 'silurian',
                             name: 'Silurian',
-                            description: [],
+                            description: [
+                             'Giant sea scorpions', 
+                             'First land plants'
+                            ],
                             start: 438,
                             end: 408,
                             color: 'pink',
