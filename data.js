@@ -241,7 +241,7 @@ const timelines = {
                     subdivisions: [{
                         id: 'palaeocene',
                         name: 'Palaeocene',
-                        description: [],
+                        description: ['Mammals spead rapidly','First owls, shrews and hedgehogs'],
                         start: 66,
                         end: 58,
                         color: 'red',
@@ -249,7 +249,7 @@ const timelines = {
                     }, {
                         id: 'eocene',
                         name: 'Eocene',
-                        description: [],
+                        description: ['First dogs, cats, rabbits, elephants and horses'],
                         start: 58,
                         end: 37,
                         color: 'red',
@@ -257,7 +257,7 @@ const timelines = {
                     }, {
                         id: 'oligocene',
                         name: 'Oligocene',
-                        description: [],
+                        description: ['First deer, monkeys, pigs and rhinoceroses'],
                         start: 37,
                         end: 24,
                         color: 'red',
@@ -265,7 +265,7 @@ const timelines = {
                     }, {
                         id: 'miocene',
                         name: 'Miocene',
-                        description: [],
+                        description: ['Many new animals appeared', 'First mice, rats and apes'],
                         start: 24,
                         end: 5,
                         color: 'red',
@@ -273,7 +273,7 @@ const timelines = {
                     }, {
                         id: 'pliocene',
                         name: 'Pliocene',
-                        description: [],
+                        description: ['Australopithecus appears','First cattle and sheep'],
                         start: 5,
                         end: 2,
                         color: 'red',
@@ -281,7 +281,7 @@ const timelines = {
                     }, {
                         id: 'pleistocene',
                         name: 'Pleistocene',
-                        description: [],
+                        description: ['The great ice ages','First modern humans appear'],
                         start: 2,
                         end: 0,
                         color: 'red',
