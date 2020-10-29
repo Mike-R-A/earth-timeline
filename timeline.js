@@ -47,6 +47,7 @@ $(document).ready(function () {
             const startTimeDiv = $(index == 0 ? `<div class="start-time">${subdivision.start} mya</div>` : '');
             const endTimeDiv = $(`<div class="end-time">${subdivision.end} mya</div>`);
 
+            yearsAgoDiv.css('background-color', subdivision.color)
             yearsAgoDiv.append(startTimeDiv).append(endTimeDiv);
 
             let descriptionDiv = $(`
@@ -73,8 +74,6 @@ $(document).ready(function () {
             const timePeriodToAdd = $(`
             <a href="#" class="list-group-item list-group-item-action time-period p-0">
             </a>`);
-
-
 
             timePeriodContainer
                 .append(yearsAgoDiv)
