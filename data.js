@@ -90,6 +90,7 @@ const timelines = {
             start: 541,
             end: 0,
             color: 'sandybrown',
+            minHeight: '1000px',
             subdivisions: [{
                     id: 'paleozoic',
                     name: 'Paleozoic',
@@ -99,6 +100,7 @@ const timelines = {
                     start: 541,
                     end: 252,
                     color: 'indianred',
+                    minHeight: '1200px',
                     subdivisions: [{
                             id: 'cambrian',
                             name: 'Cambrian',
@@ -238,6 +240,7 @@ const timelines = {
                     start: 66,
                     end: 0,
                     color: 'gold',
+                    minHeight: '4000px',
                     subdivisions: [{
                         id: 'palaeocene',
                         name: 'Palaeocene',

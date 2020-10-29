@@ -4,6 +4,9 @@ $(document).ready(function () {
     getTimeline(parentTimePeriod);
 
     function getTimeline(parent) {
+        const containerDiv = $('#timeline-container');
+        containerDiv.css('height', parent.minHeight || '90%');
+
         const parentDiv = $('#timeline');
         parentDiv.empty();
         const breadcrumbsContainerDiv = $('#breadcrumbs nav');
