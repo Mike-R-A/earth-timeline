@@ -5,11 +5,9 @@ $(document).ready(function () {
 
     function getTimeline(parent) {
         const breadcrumbsContainerDiv = $('#breadcrumbs nav');
-        const headerDiv = $('#header');
         const parentDiv = $('#timeline');
 
         breadcrumbsContainerDiv.empty();
-        headerDiv.empty();
         parentDiv.empty();
 
         let breadCrumbsList = $(`<ol class="breadcrumb"></ol>`);
