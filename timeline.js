@@ -56,7 +56,7 @@ $(document).ready(function () {
             yearsAgoDiv.append(startTimeDiv).append(endTimeDiv);
 
             let descriptionDiv = $(`
-            <div class="description col-9 col-lg-10 col-xl-11">
+            <div class="description col-9 col-lg-10 col-xl-11 shadow">
             </div>
             `);
 
