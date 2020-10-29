@@ -39,3 +39,9 @@ h3 {
 .years-ago {
     height: 100%;
 }
+
+#breadcrumbs-list {
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+    background-color: inherit;
+}

@@ -9,7 +9,7 @@ $(document).ready(function () {
         const breadcrumbsContainerDiv = $('#breadcrumbs nav');
         breadcrumbsContainerDiv.empty();
 
-        let breadCrumbsList = $(`<ol class="breadcrumb"></ol>`);
+        let breadCrumbsList = $(`<ol id="breadcrumbs-list" class="breadcrumb"></ol>`);
         for (let i = 0; i < parents.length; i++) {
             const parentForBreadCrumb = parents[i];
 
@@ -43,7 +43,7 @@ $(document).ready(function () {
 
         for (const subdivision of timePeriods) {
             const index = timePeriods.indexOf(subdivision);
-            const yearsAgoDiv = $(`<div class="years-ago col-3 col-lg-2 col-xl-1"></div>`);
+            const yearsAgoDiv = $(`<div class="years-ago col-3 col-lg-2 col-xl-1 shadow"></div>`);
             const startTimeDiv = $(`<div class="start-time">${subdivision.start}</div>`);
             const endTimeDiv = $(index == timePeriods.length - 1 ?
                 `<div class="end-time">${
