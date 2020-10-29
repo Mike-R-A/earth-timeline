@@ -4,11 +4,10 @@ $(document).ready(function () {
     getTimeline(parentTimePeriod);
 
     function getTimeline(parent) {
-        const breadcrumbsContainerDiv = $('#breadcrumbs nav');
         const parentDiv = $('#timeline');
-
-        breadcrumbsContainerDiv.empty();
         parentDiv.empty();
+        const breadcrumbsContainerDiv = $('#breadcrumbs nav');
+        breadcrumbsContainerDiv.empty();
 
         let breadCrumbsList = $(`<ol class="breadcrumb"></ol>`);
         for (let i = 0; i < parents.length; i++) {
@@ -44,29 +43,45 @@ $(document).ready(function () {
 
         for (const subdivision of timePeriods) {
             const index = timePeriods.indexOf(subdivision);
-            const startTimeDiv = index == 0 ? `<div class="start-time">${subdivision.start} mya</div>` : '';
+            const yearsAgoDiv = $(`<div class="years-ago col-3 col-lg-2 col-xl-1"></div>`);
+            const startTimeDiv = $(index == 0 ? `<div class="start-time">${subdivision.start} mya</div>` : '');
+            const endTimeDiv = $(`<div class="end-time">${subdivision.end} mya</div>`);
 
-            let descriptionDiv = `
-            <div class="description">
-                <ul>
-            `;
-            for (const descriptionPoint of subdivision.description) {
-                descriptionDiv += `<li>${descriptionPoint}</li>`;
-            }
-            descriptionDiv += `
-                </ul>
+            yearsAgoDiv.append(startTimeDiv).append(endTimeDiv);
+
+            let descriptionDiv = $(`
+            <div class="description col-9 col-lg-10 col-xl-11">
             </div>
-            `;
+            `);
 
-            const endTimeDiv = `<div class="end-time">${subdivision.end} mya</div>`;
+            const descriptionList = $(`
+            <ul></ul>
+            `);
+
+            for (const descriptionPoint of subdivision.description) {
+                const descriptionPointListItem = $(`<li>${descriptionPoint}</li>`);
+                descriptionList.append(descriptionPointListItem);
+            }
+            const timePeriodHeading = `<h3>${subdivision.name}</h3>`;
+            descriptionDiv.append(timePeriodHeading).append(descriptionList);
+
+            const timePeriodContainer = $(`
+            <div class="row time-period-container m-0">
+            </div>
+            `);
 
             const timePeriodToAdd = $(`
-            <a href="#" class="list-group-item list-group-item-action time-period">
-                <h3>${subdivision.name}</h3>
-                ${startTimeDiv}
-                    ${descriptionDiv}
-                ${endTimeDiv}
+            <a href="#" class="list-group-item list-group-item-action time-period p-0">
             </a>`);
+
+
+
+            timePeriodContainer
+                .append(yearsAgoDiv)
+                .append(descriptionDiv);
+
+            timePeriodToAdd.append(timePeriodContainer);
+
             timePeriodToAdd.addClass('time-period');
             const percent = (subdivision.end - subdivision.start) / (parent.end - parent.start) * 100;
             timePeriodToAdd.css('height', `${percent}%`);

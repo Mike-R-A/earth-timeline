@@ -29,6 +29,16 @@ h3 {
     height: 90%;
 }
 
-.time-period {
+.description {
     overflow: auto;
+    height: 100%;
+}
+
+.time-period-container {
+    height: 100%;
+}
+
+.years-ago {
+    background-color: lightblue;
+    height: 100%;
 }
