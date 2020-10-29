@@ -102,7 +102,9 @@ const timelines = {
                     subdivisions: [{
                             id: 'cambrian',
                             name: 'Cambrian',
-                            description: [],
+                            description: [
+                            'First fishes, trilobites, corals and starfish'
+                            ],
                             start: 570,
                             end: 505,
                             color: 'pink',
@@ -113,7 +115,9 @@ const timelines = {
                         {
                             id: 'ordovician',
                             name: 'Ordovician',
-                            description: [],
+                            description: [
+                             'First nautiloids. Corals and trilobites common.'
+                            ],
                             start: 505,
                             end: 438,
                             color: 'pink',
@@ -124,7 +128,10 @@ const timelines = {
                         {
                             id: 'silurian',
                             name: 'Silurian',
-                            description: [],
+                            description: [
+                             'Giant sea scorpions', 
+                             'First land plants'
+                            ],
                             start: 438,
                             end: 408,
                             color: 'pink',
@@ -135,7 +142,7 @@ const timelines = {
                         {
                             id: 'devonian',
                             name: 'Devonian',
-                            description: [],
+                            description: ['First amphibians, insects and spiders'],
                             start: 408,
                             end: 360,
                             color: 'pink',
@@ -146,7 +153,7 @@ const timelines = {
                         {
                             id: 'carboniferous',
                             name: 'Carboniferous',
-                            description: [],
+                            description: ['First reptiles','Great coal swamp forests'],
                             start: 360,
                             end: 286,
                             color: 'pink',
@@ -234,7 +241,7 @@ const timelines = {
                     subdivisions: [{
                         id: 'palaeocene',
                         name: 'Palaeocene',
-                        description: [],
+                        description: ['Mammals spead rapidly','First owls, shrews and hedgehogs'],
                         start: 66,
                         end: 58,
                         color: 'red',
@@ -242,7 +249,7 @@ const timelines = {
                     }, {
                         id: 'eocene',
                         name: 'Eocene',
-                        description: [],
+                        description: ['First dogs, cats, rabbits, elephants and horses'],
                         start: 58,
                         end: 37,
                         color: 'red',
@@ -250,7 +257,7 @@ const timelines = {
                     }, {
                         id: 'oligocene',
                         name: 'Oligocene',
-                        description: [],
+                        description: ['First deer, monkeys, pigs and rhinoceroses'],
                         start: 37,
                         end: 24,
                         color: 'red',
@@ -258,7 +265,7 @@ const timelines = {
                     }, {
                         id: 'miocene',
                         name: 'Miocene',
-                        description: [],
+                        description: ['Many new animals appeared', 'First mice, rats and apes'],
                         start: 24,
                         end: 5,
                         color: 'red',
@@ -266,7 +273,7 @@ const timelines = {
                     }, {
                         id: 'pliocene',
                         name: 'Pliocene',
-                        description: [],
+                        description: ['Australopithecus appears','First cattle and sheep'],
                         start: 5,
                         end: 2,
                         color: 'red',
@@ -274,7 +281,7 @@ const timelines = {
                     }, {
                         id: 'pleistocene',
                         name: 'Pleistocene',
-                        description: [],
+                        description: ['The great ice ages','First modern humans appear'],
                         start: 2,
                         end: 0,
                         color: 'red',
