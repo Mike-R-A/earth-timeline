@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    function reverseSubdivisions(item){
+      if(item.subdivisions){
+        item.subdivisions.reverse();
+        for(const subdivision of item subdivisions){
+          reverseSubdivisions(subdivision);
+        }
+      }
+    }
+    reverseSubdivisions(timelines);
     let parentTimePeriod = timelines;
     let parents = [];
     getTimeline(parentTimePeriod);
