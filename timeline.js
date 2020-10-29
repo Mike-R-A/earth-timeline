@@ -44,8 +44,13 @@ $(document).ready(function () {
         for (const subdivision of timePeriods) {
             const index = timePeriods.indexOf(subdivision);
             const yearsAgoDiv = $(`<div class="years-ago col-3 col-lg-2 col-xl-1"></div>`);
-            const startTimeDiv = $(index == 0 ? `<div class="start-time">${subdivision.start} mya</div>` : '');
-            const endTimeDiv = $(`<div class="end-time">${subdivision.end} mya</div>`);
+            const startTimeDiv = $(`<div class="start-time">${subdivision.start}</div>`);
+            const endTimeDiv = $(index == timePeriods.length - 1 ?
+                `<div class="end-time">${
+                    subdivision.end > 0 ? 
+                    subdivision.end : 
+                    '<span class="small">present</span>'
+                } </div>` : '');
 
             yearsAgoDiv.css('background-color', subdivision.color)
             yearsAgoDiv.append(startTimeDiv).append(endTimeDiv);
