@@ -89,7 +89,7 @@ const timelines = {
             start: 541,
             end: 0,
             color: 'sandybrown',
-            minHeight: '1000px',
+            minHeight: '1200px',
             subdivisions: [{
                     order: 1,
                     id: 'paleozoic',
@@ -252,7 +252,7 @@ const timelines = {
                     start: 66,
                     end: 0,
                     color: 'gold',
-                    minHeight: '4000px',
+                    minHeight: '4900px',
                     subdivisions: [{
                         order: 1,
                         id: 'palaeocene',
