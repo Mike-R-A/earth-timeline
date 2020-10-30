@@ -100,7 +100,7 @@ const timelines = {
                     start: 541,
                     end: 252,
                     color: 'indianred',
-                    minHeight: '1200px',
+                    minHeight: '1600px',
                     subdivisions: [{
                             order: 1,
                             id: 'cambrian',
