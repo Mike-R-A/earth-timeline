@@ -12,6 +12,13 @@ h3 {
     bottom: 0px;
 }
 
+.start-time,
+.end-time {
+    width: 100%;
+    font-size: larger;
+    font-weight: bold;
+}
+
 .description ul {
     display: table;
     margin: 0 auto;
@@ -38,6 +45,7 @@ h3 {
 
 .years-ago {
     height: 100%;
+    text-align: center;
 }
 
 #breadcrumbs-list {

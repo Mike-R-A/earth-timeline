@@ -46,7 +46,7 @@ $(document).ready(function () {
 
         for (const subdivision of timePeriods) {
             const index = timePeriods.indexOf(subdivision);
-            const yearsAgoDiv = $(`<div class="years-ago col-3 col-lg-2 col-xl-1 shadow"></div>`);
+            const yearsAgoDiv = $(`<div class="years-ago col-3 col-lg-2 col-xl-1 shadow p-0"></div>`);
             const startTimeDiv = $(`<div class="end-time">${subdivision.end}</div>`);
             const endTimeDiv = $(index == timePeriods.length - 1 ?
                 `<div class="start-time">${

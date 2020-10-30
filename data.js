@@ -3,6 +3,7 @@ const timelines = {
     name: 'Timeline of Earth',
     start: 4600,
     end: 0,
+    minHeight: '1000px',
     subdivisions: [{
             order: 1,
             id: 'precambrian',
@@ -195,6 +196,7 @@ const timelines = {
                     start: 252,
                     end: 66,
                     color: 'sandybrown',
+                    minHeight: '1000px',
                     subdivisions: [{
                             order: 1,
                             id: 'triassic',
