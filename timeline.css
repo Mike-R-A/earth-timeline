@@ -2,12 +2,12 @@ h3 {
     text-align: center;
 }
 
-.start-time {
+.end-time {
     position: absolute;
     top: 0px;
 }
 
-.end-time {
+.start-time {
     position: absolute;
     bottom: 0px;
 }

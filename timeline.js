@@ -39,7 +39,7 @@ $(document).ready(function () {
 
         let timePeriods = [];
         if (parent.subdivisions && parent.subdivisions.length > 0) {
-            timePeriods = parent.subdivisions;
+            timePeriods = parent.subdivisions.sort((a, b) => a.order < b.order ? 1 : -1);
         } else {
             timePeriods = [parent];
         }
@@ -47,12 +47,10 @@ $(document).ready(function () {
         for (const subdivision of timePeriods) {
             const index = timePeriods.indexOf(subdivision);
             const yearsAgoDiv = $(`<div class="years-ago col-3 col-lg-2 col-xl-1 shadow"></div>`);
-            const startTimeDiv = $(`<div class="start-time">${subdivision.start}</div>`);
+            const startTimeDiv = $(`<div class="end-time">${subdivision.end}</div>`);
             const endTimeDiv = $(index == timePeriods.length - 1 ?
-                `<div class="end-time">${
-                    subdivision.end > 0 ? 
-                    subdivision.end : 
-                    '<span class="small">present</span>'
+                `<div class="start-time">${
+                    index == timePeriods.length - 1 ? subdivision.start : ''
                 } </div>` : '');
 
             yearsAgoDiv.css('background-color', subdivision.color)
