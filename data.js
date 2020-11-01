@@ -35,7 +35,49 @@ const timelines = {
                     start: 4000,
                     end: 2500,
                     color: 'sandybrown',
-                    subdivisions: []
+                    subdivisions: [
+                        {
+                            order: 1,
+                            id: 'eoarchean',
+                            name: 'Eoarchean',
+                            description: [],
+                            start: 4000,
+                            start: 3600,
+                            color: 'indianred',
+                            subdivisions: []
+                        },
+                        {
+                            order: 2,
+                            id: 'paleoarchean',
+                            name: 'Paleoarchean',
+                            description: [],
+                            start: 3600,
+                            end: 3200,
+                            color: 'sandybrown',
+                            subdivisions: []
+                        },
+                        {
+                            order: 3,
+                            id: 'mesoarchean',
+                            name: 'Mesoarchean',
+                            description: [],
+                            start: 3200,
+                            end: 2800,
+                            color: 'gold',
+                            subdivisions: []
+                        },
+                        {
+                            order: 4,
+                            id: 'neoarchean',
+                            name: 'Neoarchean',
+                            description: [],
+                            start: 2800,
+                            end: 2500,
+                            color: 'lightgreen',
+                            subdivisions: []
+
+                        }
+                    ]
                 },
                 {
                     order: 3,
