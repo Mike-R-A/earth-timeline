@@ -42,7 +42,7 @@ const timelines = {
                             name: 'Eoarchean',
                             description: [],
                             start: 4000,
-                            start: 3600,
+                            end: 3600,
                             color: 'indianred',
                             subdivisions: []
                         },
