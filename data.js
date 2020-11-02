@@ -35,8 +35,7 @@ const timelines = {
                     start: 4000,
                     end: 2500,
                     color: 'sandybrown',
-                    subdivisions: [
-                        {
+                    subdivisions: [{
                             order: 1,
                             id: 'eoarchean',
                             name: 'Eoarchean',
@@ -297,58 +296,96 @@ const timelines = {
                     minHeight: '4900px',
                     subdivisions: [{
                         order: 1,
-                        id: 'palaeocene',
-                        name: 'Palaeocene',
-                        description: ['Mammals spead rapidly', 'First owls, shrews and hedgehogs'],
+                        id: 'paleogene',
+                        name: 'Paleogene',
+                        description: [],
                         start: 66,
-                        end: 58,
+                        end: 23,
                         color: 'indianred',
-                        subdivisions: []
+                        subdivisions: [{
+                            order: 1,
+                            id: 'palaeocene',
+                            name: 'Palaeocene',
+                            description: ['Mammals spead rapidly', 'First owls, shrews and hedgehogs'],
+                            start: 66,
+                            end: 56,
+                            color: 'indianred',
+                            subdivisions: []
+                        }, {
+                            order: 2,
+                            id: 'eocene',
+                            name: 'Eocene',
+                            description: ['First dogs, cats, rabbits, elephants and horses'],
+                            start: 56,
+                            end: 34,
+                            color: 'sandybrown',
+                            subdivisions: []
+                        }, {
+                            order: 3,
+                            id: 'oligocene',
+                            name: 'Oligocene',
+                            description: ['First deer, monkeys, pigs and rhinoceroses'],
+                            start: 34,
+                            end: 23,
+                            color: 'gold',
+                            subdivisions: []
+                        }]
                     }, {
                         order: 2,
-                        id: 'eocene',
-                        name: 'Eocene',
-                        description: ['First dogs, cats, rabbits, elephants and horses'],
-                        start: 58,
-                        end: 37,
+                        id: 'neogene',
+                        name: 'Neogene',
+                        description: [],
+                        start: 23,
+                        end: 2.6,
                         color: 'sandybrown',
-                        subdivisions: []
+                        subdivisions: [{
+                            order: 1,
+                            id: 'miocene',
+                            name: 'Miocene',
+                            description: ['Many new animals appeared', 'First mice, rats and apes'],
+                            start: 23,
+                            end: 5,
+                            color: 'indianred',
+                            subdivisions: []
+                        }, {
+                            order: 2,
+                            id: 'pliocene',
+                            name: 'Pliocene',
+                            description: ['Australopithecus appears', 'First cattle and sheep'],
+                            start: 5,
+                            end: 2.6,
+                            color: 'sandybrown',
+                            subdivisions: []
+                        }]
                     }, {
                         order: 3,
-                        id: 'oligocene',
-                        name: 'Oligocene',
-                        description: ['First deer, monkeys, pigs and rhinoceroses'],
-                        start: 37,
-                        end: 24,
-                        color: 'gold',
-                        subdivisions: []
-                    }, {
-                        order: 4,
-                        id: 'miocene',
-                        name: 'Miocene',
-                        description: ['Many new animals appeared', 'First mice, rats and apes'],
-                        start: 24,
-                        end: 5,
-                        color: 'lightgreen',
-                        subdivisions: []
-                    }, {
-                        order: 5,
-                        id: 'pliocene',
-                        name: 'Pliocene',
-                        description: ['Australopithecus appears', 'First cattle and sheep'],
-                        start: 5,
-                        end: 2,
-                        color: 'lightblue',
-                        subdivisions: []
-                    }, {
-                        order: 6,
-                        id: 'pleistocene',
-                        name: 'Pleistocene',
-                        description: ['The great ice ages', 'First modern humans appear'],
-                        start: 2,
+                        id: 'quaternary',
+                        name: 'Quaternary',
+                        description: [],
+                        start: 2.6,
                         end: 0,
-                        color: 'plum',
-                        subdivisions: []
+                        color: 'gold',
+                        subdivisions: [{
+                                order: 1,
+                                id: 'pleistocene',
+                                name: 'Pleistocene',
+                                description: ['The great ice ages', 'First modern humans appear'],
+                                start: 2.6,
+                                end: 0.012,
+                                color: 'indianred',
+                                subdivisions: []
+                            },
+                            {
+                                order: 2,
+                                id: 'holocene',
+                                name: 'Holocene',
+                                description: [],
+                                start: 0.012,
+                                end: 0,
+                                color: 'sandybrown',
+                                subdivisions: []
+                            }
+                        ]
                     }]
                 }
             ]
