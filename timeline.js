@@ -70,7 +70,16 @@ $(document).ready(function () {
                 descriptionList.append(descriptionPointListItem);
             }
             const timePeriodHeading = `<h3>${subdivision.name}</h3>`;
+
             descriptionDiv.append(timePeriodHeading).append(descriptionList);
+
+            if (subdivision.backgroundImage) {
+                descriptionDiv
+                    .css('background-image', `url("${subdivision.backgroundImage.source}")`)
+                    .css('background-position', 'center')
+                    .css('background-repeat', 'no-repeat')
+                    .css('background-size', 'cover');
+            }
 
             const timePeriodContainer = $(`
             <div class="row time-period-container m-0">

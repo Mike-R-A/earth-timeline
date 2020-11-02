@@ -35,6 +35,9 @@ const timelines = {
                     start: 4000,
                     end: 2500,
                     color: 'sandybrown',
+                    backgroundImage: {
+                        source: '640px-Archean.png'
+                    },
                     subdivisions: [{
                             order: 1,
                             id: 'eoarchean',
@@ -338,6 +341,7 @@ const timelines = {
                         start: 23,
                         end: 2.6,
                         color: 'sandybrown',
+                        minHeight: '1500px',
                         subdivisions: [{
                             order: 1,
                             id: 'miocene',
@@ -365,6 +369,7 @@ const timelines = {
                         start: 2.6,
                         end: 0,
                         color: 'gold',
+                        minHeight: '20000px',
                         subdivisions: [{
                                 order: 1,
                                 id: 'pleistocene',
