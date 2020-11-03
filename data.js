@@ -383,7 +383,7 @@ const timelines = {
                             name: 'Pliocene',
                             description: ['Australopithecus appears', 'First cattle and sheep'],
                             backgroundImage: {
-                                source: 'Pliocene.jpg'
+                                source: 'Pliocene.JPG'
                             },
                             start: 5,
                             end: 2.6,
