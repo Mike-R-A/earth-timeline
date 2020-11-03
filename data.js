@@ -382,6 +382,9 @@ const timelines = {
                             id: 'oligocene',
                             name: 'Oligocene',
                             description: ['First deer, monkeys, pigs and rhinoceroses'],
+                            backgroundImage: {
+                                source: 'Oligocene.jpeg'
+                            },
                             start: 34,
                             end: 23,
                             color: 'gold',
@@ -401,6 +404,9 @@ const timelines = {
                             id: 'miocene',
                             name: 'Miocene',
                             description: ['Many new animals appeared', 'First mice, rats and apes'],
+                            backgroundImage: {
+                                source: 'Miocene.jpg'
+                            },
                             start: 23,
                             end: 5,
                             color: 'indianred',
@@ -410,6 +416,9 @@ const timelines = {
                             id: 'pliocene',
                             name: 'Pliocene',
                             description: ['Australopithecus appears', 'First cattle and sheep'],
+                            backgroundImage: {
+                                source: 'Pliocene.jpg'
+                            },
                             start: 5,
                             end: 2.6,
                             color: 'sandybrown',
