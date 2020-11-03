@@ -91,7 +91,7 @@ $(document).ready(function () {
                     .css('background-position', 'center')
                     .css('background-repeat', 'no-repeat')
                     .css('background-size', 'cover')
-                    .css('color', 'white');
+                    .css('color', 'lightgray');
             }
 
             const timePeriodContainer = $(`
