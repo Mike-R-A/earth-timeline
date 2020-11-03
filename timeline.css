@@ -48,3 +48,8 @@
 body {
     background-color: gainsboro;
 }
+
+ul{
+    background-color: lightgray;
+    color: black;
+}
