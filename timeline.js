@@ -39,7 +39,7 @@ $(document).ready(function () {
 
         let timePeriods = [];
         if (parent.subdivisions && parent.subdivisions.length > 0) {
-            timePeriods = parent.subdivisions.sort((a, b) => a.order < b.order ? 1 : -1);
+            timePeriods = parent.subdivisions.sort((a, b) => a.start > b.start ? 1 : -1);
         } else {
             timePeriods = [parent];
         }

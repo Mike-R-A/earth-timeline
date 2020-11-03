@@ -5,7 +5,6 @@ const timelines = {
     end: 0,
     minHeight: '1000px',
     subdivisions: [{
-            order: 1,
             id: 'precambrian',
             name: 'Pre-Cambrian',
             minHeight: '1000px',
@@ -19,7 +18,6 @@ const timelines = {
             end: 541,
             color: 'indianred',
             subdivisions: [{
-                    order: 1,
                     id: 'hadean',
                     name: 'Hadean',
                     description: [],
@@ -32,7 +30,6 @@ const timelines = {
                     subdivisions: []
                 },
                 {
-                    order: 2,
                     id: 'archean',
                     name: 'Archean',
                     description: [],
@@ -44,7 +41,6 @@ const timelines = {
                         source: '640px-Archean.png'
                     },
                     subdivisions: [{
-                            order: 1,
                             id: 'eoarchean',
                             name: 'Eoarchean',
                             description: [],
@@ -54,7 +50,6 @@ const timelines = {
                             subdivisions: []
                         },
                         {
-                            order: 2,
                             id: 'paleoarchean',
                             name: 'Paleoarchean',
                             description: [],
@@ -64,7 +59,6 @@ const timelines = {
                             subdivisions: []
                         },
                         {
-                            order: 3,
                             id: 'mesoarchean',
                             name: 'Mesoarchean',
                             description: [],
@@ -74,7 +68,6 @@ const timelines = {
                             subdivisions: []
                         },
                         {
-                            order: 4,
                             id: 'neoarchean',
                             name: 'Neoarchean',
                             description: [],
@@ -87,7 +80,6 @@ const timelines = {
                     ]
                 },
                 {
-                    order: 3,
                     id: 'proterozoic',
                     name: 'Proterozoic',
                     description: [],
@@ -96,7 +88,6 @@ const timelines = {
                     color: 'gold',
                     minHeight: '1000px',
                     subdivisions: [{
-                            order: 1,
                             id: 'paleoproterozoic',
                             name: 'Paleoproterozoic',
                             description: [],
@@ -106,7 +97,6 @@ const timelines = {
                             subdivisions: []
                         },
                         {
-                            order: 2,
                             id: 'mesoproterozoic',
                             name: 'Mesoproterozoic',
                             description: [],
@@ -116,7 +106,6 @@ const timelines = {
                             subdivisions: []
                         },
                         {
-                            order: 3,
                             id: 'neoproterozoic',
                             name: 'Neoproterozoic',
                             description: [],
@@ -125,7 +114,6 @@ const timelines = {
                             color: 'gold',
                             minHeight: '1000px',
                             subdivisions: [{
-                                    order: 1,
                                     id: 'tonian',
                                     name: 'Tonian',
                                     description: [],
@@ -135,7 +123,6 @@ const timelines = {
                                     subdivisions: []
                                 },
                                 {
-                                    order: 2,
                                     id: 'cryogenian',
                                     name: 'Cryogenian',
                                     description: [],
@@ -145,7 +132,6 @@ const timelines = {
                                     subdivisions: []
                                 },
                                 {
-                                    order: 3,
                                     id: 'edicaran',
                                     name: 'Edicaran',
                                     description: [],
@@ -166,7 +152,6 @@ const timelines = {
             ]
         },
         {
-            order: 2,
             id: 'phanerozoic',
             name: 'Phanerozoic',
             description: [
@@ -177,7 +162,6 @@ const timelines = {
             color: 'sandybrown',
             minHeight: '1200px',
             subdivisions: [{
-                    order: 1,
                     id: 'paleozoic',
                     name: 'Paleozoic',
                     description: [
@@ -188,7 +172,6 @@ const timelines = {
                     color: 'indianred',
                     minHeight: '1600px',
                     subdivisions: [{
-                            order: 1,
                             id: 'cambrian',
                             name: 'Cambrian',
                             description: [
@@ -202,7 +185,6 @@ const timelines = {
                             ]
                         },
                         {
-                            order: 2,
                             id: 'ordovician',
                             name: 'Ordovician',
                             description: [
@@ -216,7 +198,6 @@ const timelines = {
                             ]
                         },
                         {
-                            order: 3,
                             id: 'silurian',
                             name: 'Silurian',
                             description: [
@@ -231,7 +212,6 @@ const timelines = {
                             ]
                         },
                         {
-                            order: 4,
                             id: 'devonian',
                             name: 'Devonian',
                             description: ['First amphibians, insects and spiders'],
@@ -243,7 +223,6 @@ const timelines = {
                             ]
                         },
                         {
-                            order: 5,
                             id: 'carboniferous',
                             name: 'Carboniferous',
                             description: ['First reptiles', 'Great coal swamp forests'],
@@ -255,7 +234,6 @@ const timelines = {
                             ]
                         },
                         {
-                            order: 6,
                             id: 'permian',
                             name: 'Permian',
                             backgroundImage: {
@@ -275,7 +253,6 @@ const timelines = {
                     ]
                 },
                 {
-                    order: 2,
                     id: 'mesozoic',
                     name: 'Mesozoic',
                     description: [
@@ -287,7 +264,6 @@ const timelines = {
                     color: 'sandybrown',
                     minHeight: '1000px',
                     subdivisions: [{
-                            order: 1,
                             id: 'triassic',
                             name: 'Triassic',
                             description: [
@@ -302,7 +278,6 @@ const timelines = {
                             subdivisions: []
                         },
                         {
-                            order: 2,
                             id: 'jurassic',
                             name: 'Jurassic',
                             backgroundImage: {
@@ -319,7 +294,6 @@ const timelines = {
                             subdivisions: []
                         },
                         {
-                            order: 3,
                             id: 'cretaceous',
                             name: 'Cretaceous',
                             description: [
@@ -340,7 +314,6 @@ const timelines = {
                     ]
                 },
                 {
-                    order: 3,
                     id: 'cenozoic',
                     name: 'Cenozoic',
                     description: [
@@ -352,7 +325,6 @@ const timelines = {
                     color: 'gold',
                     minHeight: '4900px',
                     subdivisions: [{
-                        order: 1,
                         id: 'paleogene',
                         name: 'Paleogene',
                         description: [],
@@ -360,7 +332,6 @@ const timelines = {
                         end: 23,
                         color: 'indianred',
                         subdivisions: [{
-                            order: 1,
                             id: 'palaeocene',
                             name: 'Palaeocene',
                             description: ['Mammals spead rapidly', 'First owls, shrews and hedgehogs'],
@@ -369,7 +340,6 @@ const timelines = {
                             color: 'indianred',
                             subdivisions: []
                         }, {
-                            order: 2,
                             id: 'eocene',
                             name: 'Eocene',
                             description: ['First dogs, cats, rabbits, elephants and horses'],
@@ -378,7 +348,6 @@ const timelines = {
                             color: 'sandybrown',
                             subdivisions: []
                         }, {
-                            order: 3,
                             id: 'oligocene',
                             name: 'Oligocene',
                             description: ['First deer, monkeys, pigs and rhinoceroses'],
@@ -391,7 +360,6 @@ const timelines = {
                             subdivisions: []
                         }]
                     }, {
-                        order: 2,
                         id: 'neogene',
                         name: 'Neogene',
                         description: [],
@@ -400,7 +368,6 @@ const timelines = {
                         color: 'sandybrown',
                         minHeight: '1500px',
                         subdivisions: [{
-                            order: 1,
                             id: 'miocene',
                             name: 'Miocene',
                             description: ['Many new animals appeared', 'First mice, rats and apes'],
@@ -412,7 +379,6 @@ const timelines = {
                             color: 'indianred',
                             subdivisions: []
                         }, {
-                            order: 2,
                             id: 'pliocene',
                             name: 'Pliocene',
                             description: ['Australopithecus appears', 'First cattle and sheep'],
@@ -425,7 +391,6 @@ const timelines = {
                             subdivisions: []
                         }]
                     }, {
-                        order: 3,
                         id: 'quaternary',
                         name: 'Quaternary',
                         description: [],
@@ -434,7 +399,6 @@ const timelines = {
                         color: 'gold',
                         minHeight: '1000px',
                         subdivisions: [{
-                            order: 1,
                             id: 'pleistocene',
                             name: 'Pleistocene',
                             backgroundImage: {
