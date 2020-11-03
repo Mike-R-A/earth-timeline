@@ -8,6 +8,7 @@ const timelines = {
             order: 1,
             id: 'precambrian',
             name: 'Pre-Cambrian',
+            minHeight: '1000px',
             description: [
                 '88% of Earth\'s history',
                 'Formation of Earth',
@@ -22,6 +23,9 @@ const timelines = {
                     id: 'hadean',
                     name: 'Hadean',
                     description: [],
+                    backgroundImage: {
+                        source: 'Hadean.png'
+                    },
                     start: 4600,
                     end: 4000,
                     color: 'indianred',
@@ -35,6 +39,7 @@ const timelines = {
                     start: 4000,
                     end: 2500,
                     color: 'sandybrown',
+                    minHeight: '1000px',
                     backgroundImage: {
                         source: '640px-Archean.png'
                     },
@@ -89,6 +94,7 @@ const timelines = {
                     start: 2500,
                     end: 541,
                     color: 'gold',
+                    minHeight: '1000px',
                     subdivisions: [{
                             order: 1,
                             id: 'paleoproterozoic',
@@ -117,7 +123,43 @@ const timelines = {
                             start: 1000,
                             end: 541,
                             color: 'gold',
-                            subdivisions: []
+                            minHeight: '1000px',
+                            subdivisions: [{
+                                    order: 1,
+                                    id: 'tonian',
+                                    name: 'Tonian',
+                                    description: [],
+                                    start: 1000,
+                                    end: 720,
+                                    color: 'indianred',
+                                    subdivisions: []
+                                },
+                                {
+                                    order: 2,
+                                    id: 'cryogenian',
+                                    name: 'Cryogenian',
+                                    description: [],
+                                    start: 720,
+                                    end: 635,
+                                    color: 'sandybrown',
+                                    subdivisions: []
+                                },
+                                {
+                                    order: 3,
+                                    id: 'edicaran',
+                                    name: 'Edicaran',
+                                    description: [],
+                                    start: 635,
+                                    end: 541,
+                                    color: 'gold',
+                                    backgroundImage: {
+                                        source: '640px-Life_in_the_Ediacaran_sea.jpg'
+                                    },
+                                    subdivisions: [
+
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
@@ -216,6 +258,9 @@ const timelines = {
                             order: 6,
                             id: 'permian',
                             name: 'Permian',
+                            backgroundImage: {
+                                source: 'Permian.jpg'
+                            },
                             description: [
                                 'Rule of the mammal-like reptiles such as the sailbacks e.g. Dimetrodon',
                                 'The Great Dying - the worst extinction event in the history of Earth'
@@ -248,6 +293,9 @@ const timelines = {
                             description: [
                                 'First dinosaurs, mammals, crocodiles and frogs evolve',
                             ],
+                            backgroundImage: {
+                                source: 'Triassic.jpg'
+                            },
                             start: 252,
                             end: 201,
                             color: 'indianred',
@@ -257,6 +305,9 @@ const timelines = {
                             order: 2,
                             id: 'jurassic',
                             name: 'Jurassic',
+                            backgroundImage: {
+                                source: 'Jurassic.jpg'
+                            },
                             description: [
                                 'Rule of the Dinosaurs',
                                 'Age of the great Sauropods such as Diplodocus and Brachiosaurus',
@@ -278,6 +329,9 @@ const timelines = {
                                 'First snakes',
                                 'Many modern mammals evolve'
                             ],
+                            backgroundImage: {
+                                source: 'Cretaceous.jpg'
+                            },
                             start: 145,
                             end: 66,
                             color: 'gold',
@@ -369,28 +423,20 @@ const timelines = {
                         start: 2.6,
                         end: 0,
                         color: 'gold',
-                        minHeight: '20000px',
+                        minHeight: '1000px',
                         subdivisions: [{
-                                order: 1,
-                                id: 'pleistocene',
-                                name: 'Pleistocene',
-                                description: ['The great ice ages', 'First modern humans appear'],
-                                start: 2.6,
-                                end: 0.012,
-                                color: 'indianred',
-                                subdivisions: []
+                            order: 1,
+                            id: 'pleistocene',
+                            name: 'Pleistocene',
+                            backgroundImage: {
+                                source: 'Pleistocene.jpg'
                             },
-                            {
-                                order: 2,
-                                id: 'holocene',
-                                name: 'Holocene',
-                                description: [],
-                                start: 0.012,
-                                end: 0,
-                                color: 'sandybrown',
-                                subdivisions: []
-                            }
-                        ]
+                            description: ['The great ice ages', 'First modern humans appear'],
+                            start: 2.6,
+                            end: 0.012,
+                            color: 'indianred',
+                            subdivisions: []
+                        }]
                     }]
                 }
             ]

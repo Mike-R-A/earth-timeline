@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     function getTimeline(parent) {
         const containerDiv = $('#timeline-container');
-        containerDiv.css('height', parent.minHeight || '90%');
+        containerDiv.css('height', parent.minHeight || '1000px');
 
         const parentDiv = $('#timeline');
         parentDiv.empty();
@@ -73,12 +73,25 @@ $(document).ready(function () {
 
             descriptionDiv.append(timePeriodHeading).append(descriptionList);
 
-            if (subdivision.backgroundImage) {
+            let backgroundImageToUse = subdivision.backgroundImage;
+
+            if (!backgroundImageToUse) {
+                const allSubdivisions = [];
+                getAllSubdivisions(subdivision, allSubdivisions);
+                const allBackgroundImages = allSubdivisions.map(a => a.backgroundImage).filter(b => b);
+
+                const randomBackground = allBackgroundImages[Math.floor(Math.random() * allBackgroundImages.length)];
+
+                backgroundImageToUse = randomBackground;
+            }
+
+            if (backgroundImageToUse) {
                 descriptionDiv
-                    .css('background-image', `url("${subdivision.backgroundImage.source}")`)
+                    .css('background', `linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("${backgroundImageToUse.source}")`)
                     .css('background-position', 'center')
                     .css('background-repeat', 'no-repeat')
-                    .css('background-size', 'cover');
+                    .css('background-size', 'cover')
+                    .css('color', 'white');
             }
 
             const timePeriodContainer = $(`
@@ -112,5 +125,12 @@ $(document).ready(function () {
                 getTimeline(parentTimePeriod);
             }
         });
+
+        function getAllSubdivisions(subdivision, allSubdivisions) {
+            for (const nextSubdivision of subdivision.subdivisions) {
+                allSubdivisions.push(nextSubdivision);
+                getAllSubdivisions(nextSubdivision, allSubdivisions);
+            }
+        }
     }
 });
