@@ -71,7 +71,7 @@ $(document).ready(function () {
             }
             const timePeriodHeading = `<h3>${subdivision.name}</h3>`;
 
-            descriptionDiv.append(timePeriodHeading).append(descriptionList);
+            descriptionDiv.append(timePeriodHeading);
 
             let backgroundImageToUse = subdivision.backgroundImage;
 
