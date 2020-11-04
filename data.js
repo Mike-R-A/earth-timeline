@@ -326,7 +326,7 @@ const timelines = {
                     start: 66,
                     end: 0,
                     color: 'gold',
-                    minHeight: '4900px',
+                    minHeight: '2400px',
                     subdivisions: [{
                         id: 'paleogene',
                         name: 'Paleogene',
