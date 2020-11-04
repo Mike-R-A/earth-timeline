@@ -87,7 +87,7 @@ $(document).ready(function () {
 
             if (backgroundImageToUse) {
                 descriptionDiv
-                    .css('background', `linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("${backgroundImageToUse.source}")`)
+                    .css('background', `linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("${backgroundImageToUse.source}")`)
                     .css('background-position', 'center')
                     .css('background-repeat', 'no-repeat')
                     .css('background-size', 'cover')
