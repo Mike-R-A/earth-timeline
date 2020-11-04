@@ -177,6 +177,9 @@ const timelines = {
                             description: [
                                 'First fishes, trilobites, corals and starfish'
                             ],
+                            backgroundImage:{
+                                source:'Cambrian.jpg'
+                            },
                             start: 570,
                             end: 505,
                             color: 'indianred',
