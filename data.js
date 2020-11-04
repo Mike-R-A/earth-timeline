@@ -5,19 +5,6 @@ const timelines = {
     end: 0,
     minHeight: '1000px',
     subdivisions: [{
-            id: 'precambrian',
-            name: 'Pre-Cambrian',
-            minHeight: '1000px',
-            description: [
-                '88% of Earth\'s history',
-                'Formation of Earth',
-                'Collision that formed the moon',
-                'Gradual emergence of simple life'
-            ],
-            start: 4600,
-            end: 541,
-            color: 'indianred',
-            subdivisions: [{
                     id: 'hadean',
                     name: 'Hadean',
                     description: [],
@@ -148,9 +135,7 @@ const timelines = {
                             ]
                         }
                     ]
-                }
-            ]
-        },
+                },
         {
             id: 'phanerozoic',
             name: 'Phanerozoic',
