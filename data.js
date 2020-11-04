@@ -139,9 +139,7 @@ const timelines = {
         {
             id: 'phanerozoic',
             name: 'Phanerozoic',
-            description: [
-                'Life gets going'
-            ],
+            description: [],
             start: 541,
             end: 0,
             color: 'sandybrown',
@@ -149,9 +147,7 @@ const timelines = {
             subdivisions: [{
                     id: 'paleozoic',
                     name: 'Paleozoic',
-                    description: [
-                        '"Ancient Life"'
-                    ],
+                    description: [],
                     start: 541,
                     end: 252,
                     color: 'indianred',
@@ -189,8 +185,7 @@ const timelines = {
                             id: 'silurian',
                             name: 'Silurian',
                             description: [
-                                'Giant sea scorpions',
-                                'First land plants'
+                                'Giant sea scorpions and first land plants'
                             ],
                             start: 438,
                             end: 408,
@@ -213,7 +208,7 @@ const timelines = {
                         {
                             id: 'carboniferous',
                             name: 'Carboniferous',
-                            description: ['First reptiles', 'Great coal swamp forests'],
+                            description: ['First reptiles and the great coal swamp forests'],
                             start: 360,
                             end: 286,
                             color: 'lightblue',
@@ -228,7 +223,7 @@ const timelines = {
                                 source: 'Permian.jpg'
                             },
                             description: [
-                                'Rule of the mammal-like reptiles such as the sailbacks e.g. Dimetrodon',
+                                'Mammal-like reptiles such as Dimetrodon',
                                 'The Great Dying - the worst extinction event in the history of Earth'
                             ],
                             start: 286,
@@ -305,7 +300,6 @@ const timelines = {
                     id: 'cenozoic',
                     name: 'Cenozoic',
                     description: [
-                        '"Modern Life"',
                         'Age of mammals'
                     ],
                     start: 66,
